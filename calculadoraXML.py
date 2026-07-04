@@ -308,7 +308,7 @@ def escrever_resultado(texto):
 
 # Instanciando a janela principal usando a classe do TkinterDnD para ter suporte ao Drag/Drop
 janela = TkinterDnD.Tk()
-janela.title("Calculadora e Extrator de XML Fiscal")
+janela.title("Calculadora de XML Fiscal")
 janela.geometry("900x700")
 janela.configure(bg="#0b0f19")
 
