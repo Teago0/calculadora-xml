@@ -6,6 +6,14 @@ import xml.etree.ElementTree as ET
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
+import ctypes
+
+# Avisa o Windows que o app suporta alta resolução (tira o borrado em telas com zoom de 125%+)
+try:
+    ctypes.windll.shcore.SetProcessDpiAwareness(1)
+except Exception:
+    pass
+
 # Resolvi usar o customtkinter para dar um visual mais moderno (Dark Mode) pra aplicação
 import customtkinter as ctk
 # Biblioteca auxiliar para permitir o "arrastar e soltar" de arquivos na tela
